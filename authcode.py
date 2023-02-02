@@ -835,37 +835,49 @@ SECRET="{auths['secret']}"</textarea><br>''' + '''
 <title>klld</title>
 <meta name=description content="The future are coming fast">
 <link rel=icon href=icon.png type=image/x-icon>
-<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.10.0/css/all.css>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css type=text/css />
-<link rel=stylesheet href=https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css>
-<script data-ad-client=ca-pub-8899997837601633 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
-<link rel=stylesheet href=https://youssefraafatnasry.github.io/portfolYOU/assets/css/style.css>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-<link href="http://klld.42web.io/assets/libs/tiny-slider.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+
+
+  <link href="https://unpkg.com/basscss@6.1.6/css/basscss.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+  
+<link href="https://ezfn.dev/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
-<link href="http://klld.42web.io/assets/css/bootstrap-dark.min.css" class="theme-opt" rel="stylesheet" type="text/css">
+<link href="https://ezfn.dev/assets/css/bootstrap-dark.min.css" class="theme-opt" rel="stylesheet" type="text/css">
 
-<link href="http://klld.42web.io/assets/css/icons.min.css" rel="stylesheet" type="text/css">
-<link href="http://klld.42web.io/libs/line.css" type="text/css" rel="stylesheet">
+<link href="https://ezfn.dev/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+<link href="https://ezfn.dev/assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
 
-<link href="http://klld.42web.io/assets/css/style-dark.min.css" class="theme-opt" rel="stylesheet" type="text/css">
+<link href="https://ezfn.dev/assets/css/style-dark.min.css" class="theme-opt" rel="stylesheet" type="text/css">
 
+<link href="https://bootstrap.klld.tk/texteffect.css" class="theme-opt" rel="stylesheet" type="text/css">
 
-<link rel="shortcut icon" href="">
+<link rel="shortcut icon" href="../klld.png">
 
-<link href="http://klld.42web.io/assets/libs/tiny-slider.css" rel="stylesheet">
-<link href="http://klld.42web.io/assets/libs/tobii.min.css" rel="stylesheet">
+<link href="https://ezfn.dev/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+<link href="https://ezfn.dev/assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
 
-<link href="http://klld.42web.io/assets/css/bootstrap-dark.min.css" class="theme-opt" rel="stylesheet" type="text/css">
+<link href="https://ezfn.dev/assets/css/bootstrap-dark.min.css" class="theme-opt" rel="stylesheet" type="text/css">
 
-<link href="http://klld.42web.io/assets/css1/icons.min.css" rel="stylesheet" type="text/css">
-<link href="http://klld.42web.io/assets/css1/line.css" type="text/css" rel="stylesheet">
-<link href="http://klld.42web.io/assets/css1/s.css" type="text/css" rel="stylesheet">
 <link href="https://ezfnv2-cloudflare-pages.pages.dev/assets/css/icons.min.css" rel="stylesheet" type="text/css">
 <link href="https://ezfnv2-cloudflare-pages.pages.dev/assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link href="https://ezfn.dev/assets/css/style-dark.min.css" class="theme-opt" rel="stylesheet" type="text/css">
+
 </head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
 
 </div>
 <script>
