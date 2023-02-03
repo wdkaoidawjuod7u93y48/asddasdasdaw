@@ -27,45 +27,9 @@ async def index(request):
   return redirect("")
 
 
-@app.route("/images/playlists/<id>/showcase.png")
-async def images(request, id):
-  try:
-    id = id.upper()
-    if path.exists(f"images/{id}"):
-      return await file(f"images/{id}.png")
-    else:
-      image_url = f"https://fortnite-api.com/images/playlists/{id}/showcase.png"
-      with urllib.request.urlopen(image_url) as url:
-          image_data = url.read()
-      with open("temp.png", "wb") as f:
-          f.write(image_data)
-      image = Image.open("temp.png")
-      draw = ImageDraw.Draw(image)
-      font = ImageFont.truetype("Provicali.otf", 62)
-      text_width, text_height = draw.textsize("KllDFN", font=font)
-      x = (image.width - text_width) // 2
-      y = (image.height - text_height) // 2
-      try:
-        draw.text((x, y), "KllDFN", font=font, fill=(256, 64))
-      except:
-        draw.text((x, y), "KllDFN", font=font, fill=(0, 0, 0, 64))
-      image.save(f"images/{id}.png")
-      return await file(f"images/{id}.png")
-  except Exception as e:
-    return text(str(e))
 
-async def statusLoop():
-  while True:
-    images = listdir("images")
-    game = discord.Activity(
-      type=discord.ActivityType.watching, 
-      name=f"{len(images)} Images"
-    )
-    await bot.change_presence(
-      status=discord.Status.dnd, 
-      activity=game
-    )
-    await sleep(300)
+
+
 
 
 @app.route("/images/<id>/icon.png")
@@ -108,6 +72,84 @@ async def statusLoop():
     )
     await sleep(300)
 
+    
+@app.route("/images/<id>/featured.png")
+async def images(request, id):
+  try:
+    id = id.upper()
+    if path.exists(f"images/{id}"):
+      return await file(f"images/{id}.png")
+    else:
+      image_url = f"https://fortnite-api.com/images/cosmetics/br/{id}/featured.png"
+      with urllib.request.urlopen(image_url) as url:
+          image_data = url.read()
+      with open("temp.png", "wb") as f:
+          f.write(image_data)
+      image = Image.open("temp.png")
+      draw = ImageDraw.Draw(image)
+      font = ImageFont.truetype("Provicali.otf", 62)
+      text_width, text_height = draw.textsize("klld", font=font)
+      x = (image.width - text_width) // 2
+      y = (image.height - text_height) // 2
+      try:
+        draw.text((x, y), "klld", font=font, fill=(256, 64))
+      except:
+        draw.text((x, y), "klld", font=font, fill=(0, 0, 0, 64))
+      image.save(f"images/{id}.png")
+      return await file(f"images/{id}.png")
+  except Exception as e:
+    return text(str(e))
+async def statusLoop():
+  while True:
+    images = listdir("images")
+    game = discord.Activity(
+      type=discord.ActivityType.watching, 
+      name=f"{len(images)} Images"
+    )
+    await bot.change_presence(
+      status=discord.Status.dnd, 
+      activity=game
+    )
+    await sleep(300)
+  
+@app.route("/images/<id>/showcase.png")
+async def images(request, id):
+  try:
+    id = id.upper()
+    if path.exists(f"images/{id}"):
+      return await file(f"images/{id}.png")
+    else:
+      image_url = f"https://fortnite-api.com/images/playlists/{id}/showcase.png"
+      with urllib.request.urlopen(image_url) as url:
+          image_data = url.read()
+      with open("temp.png", "wb") as f:
+          f.write(image_data)
+      image = Image.open("temp.png")
+      draw = ImageDraw.Draw(image)
+      font = ImageFont.truetype("Provicali.otf", 62)
+      text_width, text_height = draw.textsize("klld", font=font)
+      x = (image.width - text_width) // 2
+      y = (image.height - text_height) // 2
+      try:
+        draw.text((x, y), "klld", font=font, fill=(256, 64))
+      except:
+        draw.text((x, y), "klld", font=font, fill=(0, 0, 0, 64))
+      image.save(f"images/{id}.png")
+      return await file(f"images/{id}.png")
+  except Exception as e:
+  return text(str(e))
+async def statusLoop():
+  while True:
+    images = listdir("images")
+    game = discord.Activity(
+      type=discord.ActivityType.watching, 
+      name=f"{len(images)} Images"
+    )
+    await bot.change_presence(
+      status=discord.Status.dnd, 
+      activity=game
+    )
+    await sleep(300)    
 
 @bot.event
 async def on_ready():
