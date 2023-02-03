@@ -27,7 +27,7 @@ async def index(request):
   return redirect("")
 
 
-@app.route("/images/playlists/{id}/showcase.png")
+@app.route("/images/playlists/<id>/showcase.png")
 async def images(request, id):
   try:
     id = id.upper()
