@@ -42,7 +42,7 @@ async def check(request):
         "id": str(cosmetic["id"]),
         "rarity": str(cosmetic["rarity"]["value"]),
         "type": str(cosmetic["type"]["value"]),
-        "image": f"https://e1052680-af60-45e6-bc0f-b34c7f9c5892.id.repl.co/images/{str(cosmetic['id'])}/icon.png"
+        "image": f"https://8490557b-ee16-43aa-89d5-ed272f5f0aee.id.repl.co/images/{str(cosmetic['id'])}/icon.png"
       }
     return sanic.response.json(
       {
