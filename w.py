@@ -68,6 +68,6 @@ async def verify(ctx):
 
 
 try:
-  bot.run(ENV['token'])
+  bot.run(ENV['TOKEN'])
 except:
   system("kill 1")
