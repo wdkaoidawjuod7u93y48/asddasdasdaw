@@ -933,14 +933,11 @@ SECRET="{auths['secret']}"</textarea><br>''' + '''
 <script src=script.js type=ae1a82ef863b5e3683c5d35f-text/javascript></script>
 <h1 class="hero-title mt-0"></h1><br>
 <br><br>
-<textarea rows=3 style=color:#fff;resize:none;width:95%;font-size:15px;background-color:#333;color:white;border:0;border-radius:20px id=deviceAuthText class="form-control drop" data-cf-modified-f01948e756116e48c69a07b1->'''
-<textarea rows="3" style="resize: none; width: 100%;" id="deviceAuthsText" class="form-control drop">
 + f'''
 DEVICE_ID="{auths['deviceId']}"
 ACCOUNT_ID="{auths['accountId']}"
-SECRET="{auths['secret']}
+SECRET="{auths['secret']}"
 ''' + '''
-</textarea>
 <br/>
 <br>
 <section class="features section">
