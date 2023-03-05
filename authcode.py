@@ -932,13 +932,11 @@ SECRET="{auths['secret']}"</textarea><br>''' + '''
 <div class=hero-copy>
 <script src=script.js type=ae1a82ef863b5e3683c5d35f-text/javascript></script>
 <h1 class="hero-title mt-0"></h1><br>
-<br>
 '''+ f'''
 DEVICE_ID="{auths['deviceId']}"
 ACCOUNT_ID="{auths['accountId']}"
-SECRET="{auths['secret']}"</textarea><br>''' + '''
+SECRET="{auths['secret']}" ''' + '''
 <script src=script.js type=ae1a82ef863b5e3683c5d35f-text/javascript></script>
-<br/>
 <section class="features section">
 <div class=container>
 <div class="features-inner section-inner has-bottom-divider">
