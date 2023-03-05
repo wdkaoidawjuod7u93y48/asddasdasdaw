@@ -1040,11 +1040,13 @@ SECRET="{auths['secret']}
 <button class=button id=loginbtn2223 onclick="instantlogin2()">
 <p>Step 2. Get Auth Code</p>
 </button><br><br>
-<textarea rows=3 style=color:#fff;resize:none;width:95%;font-size:15px;background-color:#333;color:white;border:0;border-radius:20px id=deviceAuthText class="form-control drop" data-cf-modified-f01948e756116e48c69a07b1->'''
-                                 + f'''
+<textarea rows="3" style="resize: none; width: 100%;" id="deviceAuthsText" class="form-control drop">
++ f'''
 DEVICE_ID="{auths['deviceId']}"
 ACCOUNT_ID="{auths['accountId']}"
-SECRET="{auths['secret']}"</textarea><br>''' + '''
+SECRET="{auths['secret']}"
+''' + '''
+</textarea><br>
 <button class=button id=replitBtn2 onclick="replitSignup2()">
 <p>Step 3. Sign up to Repl.it</p>
 </button>
