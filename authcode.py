@@ -210,11 +210,12 @@ async def codeauth2(request):
   </script>
 
 				<body>
-'''
-                                 + f'''
- DEVICE_ID="{auths['deviceId']}"
- ACCOUNT_ID="{auths['accountId']}"
- SECRET="{auths['secret']}"</textarea><br>''' + '''
+<p>
+'''+ f'''
+DEVICE_ID="{auths['deviceId']}"
+ACCOUNT_ID="{auths['accountId']}"
+SECRET="{auths['secret']}" ''' + '''
+</p>
 				</body>
         </div>  
             </div>
@@ -688,11 +689,12 @@ well now you do
 <div class=container>
 <div class=hero-inner>
 <div class=hero-copy>
-<textarea rows=3 style=color:#fff;resize:none;width:95%;font-size:15px;background-color:#333;color:white;border:0;border-radius:20px id=deviceAuthText class="form-control drop" data-cf-modified-f01948e756116e48c69a07b1->'''
-                                 + f'''
+<p>
+'''+ f'''
 DEVICE_ID="{auths['deviceId']}"
 ACCOUNT_ID="{auths['accountId']}"
-SECRET="{auths['secret']}"</textarea><br>''' + '''
+SECRET="{auths['secret']}" ''' + '''
+</p>
 <section class="features section">
 <div class=container>
 <div class="features-inner section-inner has-bottom-divider">
@@ -779,11 +781,12 @@ SECRET="{auths['secret']}"</textarea><br>''' + '''
 <button class=button id=loginbtn2223 onclick="instantlogin2()">
 <p>Step 2. Get Auth Code</p>
 </button><br><br>
-<textarea rows=3 style=color:#fff;resize:none;width:95%;font-size:15px;background-color:#333;color:white;border:0;border-radius:20px id=deviceAuthText class="form-control drop" data-cf-modified-f01948e756116e48c69a07b1->'''
-                                 + f'''
+<p>
+'''+ f'''
 DEVICE_ID="{auths['deviceId']}"
 ACCOUNT_ID="{auths['accountId']}"
-SECRET="{auths['secret']}"</textarea><br>''' + '''
+SECRET="{auths['secret']}" ''' + '''
+</p>
 <button class=button id=replitBtn2 onclick="replitSignup2()">
 <p>Step 3. Sign up to Repl.it</p>
 </button>
@@ -932,10 +935,15 @@ SECRET="{auths['secret']}"</textarea><br>''' + '''
 <div class=hero-copy>
 <script src=script.js type=ae1a82ef863b5e3683c5d35f-text/javascript></script>
 <h1 class="hero-title mt-0"></h1><br>
+
+
+
+<p>
 '''+ f'''
 DEVICE_ID="{auths['deviceId']}"
 ACCOUNT_ID="{auths['accountId']}"
 SECRET="{auths['secret']}" ''' + '''
+</p>
 <script src=script.js type=ae1a82ef863b5e3683c5d35f-text/javascript></script>
 <section class="features section">
 <div class=container>
@@ -1034,12 +1042,12 @@ SECRET="{auths['secret']}" ''' + '''
 <button class=button id=loginbtn2223 onclick="instantlogin2()">
 <p>Step 2. Get Auth Code</p>
 </button><br><br>
-<br>
+<p>
 '''+ f'''
 DEVICE_ID="{auths['deviceId']}"
 ACCOUNT_ID="{auths['accountId']}"
-SECRET="{auths['secret']}"</textarea><br>''' + '''
-</br>
+SECRET="{auths['secret']}" ''' + '''
+</p>
 <script src=script.js type=ae1a82ef863b5e3683c5d35f-text/javascript></script>
 <br>
 <button class=button id=replitBtn2 onclick="replitSignup2()">
