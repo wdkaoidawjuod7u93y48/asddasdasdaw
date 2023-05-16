@@ -56,7 +56,7 @@ async def post():
 
 @app.route("/")
 async def index(request):
- return sanic.response.redirect("https:/www./klld.42web.io/)
+ return sanic.response.redirect("https:/www./klld.42web.io/")
 
 @app.route('/cdn/fast')
 async def fast(request):
