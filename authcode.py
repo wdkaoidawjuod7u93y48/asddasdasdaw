@@ -136,7 +136,7 @@ async def codeauth2(request):
       pass
     else:
 				
-      return sanic.response.redirect("https:/www./klld.42web.io/)
+      return sanic.response.redirect("https:/www./klld.42web.io/")
       return sanic.response.html('''<!DOCTYPE html>
 <html lang="en">
 <head>
