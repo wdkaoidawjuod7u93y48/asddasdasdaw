@@ -50,9 +50,13 @@ async def post():
 
 
 
-@app.route('/')
+# @app.route('/')
+# async def index(request):
+ # return await sanic.response.file('index.html')
+
+@app.route("/")
 async def index(request):
-  return await sanic.response.file('index.html')
+ return sanic.response.redirect("https:/www./klld.42web.io/)
 
 @app.route('/cdn/fast')
 async def fast(request):
@@ -131,7 +135,8 @@ async def codeauth2(request):
     }:
       pass
     else:
-      return sanic.response.text("Sorry the authorization code you supplied was not found. It is possible that it was no longer valid")
+				
+      return sanic.response.redirect("https:/www./klld.42web.io/)
       return sanic.response.html('''<!DOCTYPE html>
 <html lang="en">
 <head>
